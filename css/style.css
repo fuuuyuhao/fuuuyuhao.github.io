@@ -1,28 +1,12 @@
 .wrapper {
   position: relative;
 }
-/* 
-.left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background-size: cover;
-  display: block;
-  background-position: 50% 0;
-  background-color: #000;
-} */
-
 .right {
   margin: 0 auto;
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  .wrapper .left {
-    display: none;
-  }
-
   .wrapper .right {
     width: 100%
   }

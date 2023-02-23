@@ -9,34 +9,23 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jq.js"></script>
-  <style>
-    .left {
-      width: 40%;
-    }
-
-    .right {
-      width: 60%
-    }
-  </style>
 </head>
 
 <body>
   <div class="wrapper">
-    <section class="left" style="background-image: url('images/about.jpg');">
-    </section>
     <div class="sidebar" style="display: none;">
       <div class="index_box">
         <div class="index_txt">
           <img src="images/touxiang.jpg" alt="touxiang">
-          <h1> Fu Yuhao</h1>
-          <p>做自己的事，让别人说去吧</p>
+          <h1> Fu-Yh</h1>
+          <p>A half-baked programmer, a magic front-end developer</p>
           <div class="zuobiao">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
                 d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
               <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-            </svg>北京 · 中国
+            </svg>BeiJing · China
           </div>
           <div class="menu_item_box">
             <ul class="index_nav">
@@ -74,18 +63,8 @@
           <h1 class="single_title">Case</h1>
         </div>
         <div class="wznrys">
-          <!-- <p><strong>这里是神奇实验室</strong></p>
-          <p>所有神奇的事情都是在这里发生的</p>
-          <h3>Case 介绍：</h3> -->
           <ul id="list-box">
-            <!-- <li>1> : <a href="case/EatWhat/index.html">EatWhat</a> , 今天吃什么，解决上班族世纪难题</li>
-            <li>2> : <a href="case/Todo/index.html">Todo-List</a> , 管理你的每一个事项</li>
-            <li>3> : <a href="case/NewYearCountdown/index.html">NewYearCountdown</a> , 用最好的心态迎接新年</li>
-            <li>4> : <a href="case/Counter/index.html">Counter</a> , 基于js的便携计算器</li>
-            <li>5> : <a href="case/MusicPlayer/index.html">MusicPlayer</a> , 这是一款非常优秀的随身听</li>
-            <li>...</li> -->
           </ul>
-
         </div>
     </section>
   </div>
@@ -93,14 +72,14 @@
   <script>
     const listBox = document.getElementById('list-box');
     let caseBox = [
-      {id :1, aHref: 'case/EatWhat/index.html', title: 'EatWhat', content: '今天吃什么，解决上班族世纪难题'},
-      {id :2, aHref: 'case/Todo/index.html', title: 'Todo-List', content: '管理你的每一个事项'},
-      {id :3, aHref: 'case/NewYearCountdown/index.html', title: 'NewYearCountdown', content: '用最好的心态迎接新年'},
-      {id :4, aHref: 'case/Counter/index.html', title: 'Counter', content: '基于js的便携计算器'},
-      {id :5, aHref: 'case/MusicPlayer/index.html', title: 'MusicPlayer', content: '这是一款非常优秀的随身听'},
-      {id :6, aHref: 'case/NoOvertime/index.html', title: 'NoOvertime', content: '再也不怕下班早退了'},
-      {id :7, aHref: 'case/CanvasIndex/index.html', title: 'CanvasIndex', content: '网站首页--科幻主题版本'},
-      {id :8, aHref: 'case/YiGeWangZhan/index.html', title: 'YiGeWangZhan', content: '网站首页--简约主题版本'}
+      {id :1, aHref: 'case/EatWhat/index.html', title: 'EatWhat', content: 'What to eat today, to solve the century problem of office workers', ZhContent: '今天吃什么，解决上班族世纪难题'},
+      {id :2, aHref: 'case/Todo/index.html', title: 'Todo-List', content: 'Manage everything you do', ZhContent: '管理你的每一个事项'},
+      {id :3, aHref: 'case/NewYearCountdown/index.html', title: 'NewYearCountdown', content: 'Come and prepare for the new year', ZhContent: '快来准备跨年吧'},
+      {id :4, aHref: 'case/Counter/index.html', title: 'Counter', content: 'Web calculator based on js', ZhContent: '基于js的便携计算器'},
+      {id :5, aHref: 'case/MusicPlayer/index.html', title: 'MusicPlayer', content: 'I can only say that this is a very beautiful music player', ZhContent: '这是一款非常优秀的随身听'},
+      {id :6, aHref: 'case/NoOvertime/index.html', title: 'NoOvertime', content: "You don't want to work overtime", ZhContent: '再也不怕下班早退了'},
+      {id :7, aHref: 'case/CanvasIndex/index.html', title: 'CanvasIndex', content: 'Made a sci-fi style website homepage using Canvas technology', ZhContent: '网站首页--科幻主题版本'},
+      {id :8, aHref: 'case/YiGeWangZhan/index.html', title: 'YiGeWangZhan', content: 'So this is a simple homepage layout', ZhContent: '网站首页--简约主题版本'}
     ]
     caseBox.forEach((item) => {
       // console.log(item)

@@ -1,7 +1,7 @@
 .wrapper {
   position: relative;
 }
-
+/* 
 .left {
   position: fixed;
   top: 0;
@@ -11,10 +11,11 @@
   display: block;
   background-position: 50% 0;
   background-color: #000;
-}
+} */
 
 .right {
-  float: right;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -419,6 +420,10 @@ q {
   font-weight: 600;
   color: #444;
 }
+#list-box, .about__box {
+  margin: 0 20%;
+  margin-top: -30px;
+}
 @media (max-width: 768px) {
   .article h2 {
     position: relative;
@@ -440,138 +445,7 @@ q {
     font-weight: 300;
   }
 
-
+  #list-box, .about__box {
+    margin: 0;
+  }
 }
-
-
-/* .article .header-anchor {
-  display: none
-}
-
-.article h1 {
-  font-size: 30px;
-  line-height: 38px;
-  margin: 50px 0
-}
-
-.article h2 {
-  position: relative;
-  font-size: 24px;
-  line-height: 48px;
-  margin: 30px 0
-}
-
-.article h2:before {
-  content: "";
-  border-left: 5px solid var(--primary-color);
-  position: absolute;
-  left: -15px;
-  height: 75%;
-  top: 12%
-}
-
-.article h1,.article h2 {
-  text-transform: uppercase;
-  letter-spacing: 1px
-}
-
-.article h3 {
-  font-size: 20px;
-  line-height: 40px;
-  margin: 25px 0;
-  letter-spacing: 1px
-}
-
-.article h4 {
-  font-size: 16px;
-  line-height: 32px;
-  margin: 25px 0;
-  letter-spacing: 1px
-}
-
-.article p,.article li {
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.article>div>p,.article>div>ul,.article>div>ol {
-  margin: 20px 0
-}
-
-.article a {
-  color: #68b88e;
-  border-bottom: 2px solid transparent
-}
-
-.article a:hover {
-  border-bottom-color: var(--primary-color)
-}
-
-.article img {
-  display: block;
-  max-width: 70%;
-  margin: 10px auto
-}
-
-.article ol,ul {
-  padding-left: 16px;
-}
-
-.article li {
-  position: relative
-}
-
-.article li:before {
-  position: absolute;
-  font-weight: 600;
-  content: " \b7  ";
-  margin: 0;
-  left: -10px
-}
-
-.article hr {
-  margin: 16px 0;
-  height: 1px;
-  background-color: #e6e6e6;
-  border: none
-}
-
-.article strong {
-  font-weight: 600;
-  color: #444
-}
-
-.article blockquote {
-  margin: 2em 0;
-  padding-left: 16px;
-  border-left: 5px solid #e6e6e6
-}
-
-.article blockquote p {
-  font-size: 15px;
-  font-style: italic;
-  line-height: 1.8em;
-  color: #999
-}
-
-.article code {
-  font-family: Roboto Mono,Menlo,Consolas,monospace;
-  background-color: var(--shiki-token-background);
-  font-size: .75em;
-  padding: 3px 6px;
-  border-radius: 2px
-}
-
-.article pre {
-  font-family: Roboto Mono,Menlo,Consolas,monospace;
-  font-size: 13px;
-  overflow-x: auto;
-  text-align: left;
-  padding: 15px 25px;
-  line-height: 20px
-}
-
-.article pre code {
-  padding: 0;
-  font-size: inherit
-} */

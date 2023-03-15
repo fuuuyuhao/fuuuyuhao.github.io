@@ -2,9 +2,9 @@ const source = `
 \`\`\`javascript
 const FuYuhao = {
   introduction: "Hi, there 👋! I'm Fu Yuhao. I always love interesting life and magic front-end technology.",
-  blog: "https://fuuyh.github.io/",
+  blog: "https://www.noovertime.cc/note",
   github: "https://github.com/fuuyh/",
-  website: "https://1075.tech/",
+  website: "https://www.noovertime.cc/",
   works: [
     {
       name: "daily-exercise-items",
